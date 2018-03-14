@@ -1,10 +1,17 @@
 import React from "react";
- 
+import PropTypes from 'prop-types';
+import Header from './components/Header'
 export class App extends React.Component {
     
     render() {
-        return React.createElement('h1', {},
-                        'Welcome to React');
+        return(
+
+<div> <Header title="The React Product" />
+   
+                    {this.props.children}
+                </div>
+  
+        )
         
     }
 }
