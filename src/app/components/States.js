@@ -33,7 +33,7 @@ return(
 return (
     <div id ="states"> 
     <h2>STATES </h2>
-    
+    <NavLink to={`/states/create`}  ><button className="updatebutton">Add New State</button></NavLink>
     {/* <button onClick={() => this.refresh()}>
       Refresh
     </button> */}
@@ -51,6 +51,7 @@ return (
             <th>
 State Name
             </th>
+            <th>View</th>
             <th>
                 Edit
             </th>
@@ -70,6 +71,11 @@ State Name
                   <NavLink to={`/states/view/${state.id}`}  >  {state.name}</NavLink>
                
                 </td>
+                <td>
+                
+                <NavLink to={`/states/view/${state.id}`}  > <img src="../../assets/view2.png" /></NavLink>
+             
+              </td>
 <td>
             <NavLink to={`/states/edit/${state.id}`}  >   <img src="../../assets/Edit.png" /></NavLink>
 </td>

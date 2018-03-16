@@ -10,7 +10,7 @@ import {
 import {App} 
         from "./App";
 import Home from "./components/Home";
-import About from "./components/Home";
+import About from "./components/About";
 import Contact from "./components/Contact";
 import States from "./container/States";
 import StateView from "./container/StateView";
@@ -24,11 +24,12 @@ return(
 <App>
 <Switch>
 <Route path="/"  exact   component={Home} />
-<Route path="/about"   component={About} />
-<Route path="/contact"   component={Contact} />
+<Route path="/about" exact  component={About} />
+<Route path="/contact"  exact component={Contact} />
 <Route path="/states/" exact component ={States}/>
 <Route path="/states/view/:id" exact component ={StateView}/>
 <Route path="/states/edit/:id" exact component ={StateEdit}/>
+<Route path="/states/create" exact component ={StateEdit}/>
     </Switch>
 </App>
 </Router>

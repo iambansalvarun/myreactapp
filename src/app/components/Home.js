@@ -46,6 +46,21 @@ export default class Home extends PureComponent {
     </li>
                 </ul>
 
+
+
+<p>Staying ahead of digital trends and on top of rapidly changing customer behavior is the key to making your digital transformation a success.
+
+We help you make the ultimate impact by keeping you connected to your customers’ continuously shifting needs. Together, we ignite a strategy from the heart of your company’s purpose and accelerate your business through a digital backbone of data, technology and creative concepts that maximize customer service and experience.
+
+Our mission is to help your organization become one of the digital winners of tomorrow.</p>
+
+<h3>Our services:</h3>
+<ul>
+<li>Digital strategy consulting</li>
+<li>Digital strategy Execution</li>
+<li>Digital product Management</li>
+</ul>
+
             </div>
 
 

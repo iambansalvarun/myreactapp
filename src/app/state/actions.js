@@ -3,7 +3,6 @@ import * as ActionTypes from "./action-types";
 import * as service from "./service";
 
 export function initStates(states){
-    console.log("init state list called")
     return {
 
         type: ActionTypes.INIT_STATES,
@@ -13,7 +12,6 @@ export function initStates(states){
     }
 }
 export function initStateView(state){
-    console.log("initstateview called")
     return {
 
         type: ActionTypes.INIT_STATEVIEW,
@@ -25,7 +23,7 @@ export function initStateView(state){
 
 
 export function initStateUpdate(state){
-    console.log("initstateupdatecalled")
+  
     return {
 
         type: ActionTypes.INIT_STATEUPDATE,
@@ -64,8 +62,6 @@ export function fetchStates() {
         service.getStates()
         .then (states => {
             let action = initStates(states);
-            console.log(" states ", states);
-            //action object
             dispatch(action);
             dispatch(loading(false));
         });
@@ -82,8 +78,6 @@ export function saveUpdatedState(state) {
         service.updateState(state)
         .then (state => {
             let action = initStateView(state);
-            console.log(" states ", state);
-            //action object
             dispatch(action);
             dispatch(loading(false));
         });
@@ -91,6 +85,20 @@ export function saveUpdatedState(state) {
     }
 }
 
+export function createState(state) {
+    
+    return function(dispatch, getState) {
+     
+        dispatch(loading(true));
+        service.createState(state)
+        .then (state => {
+            let action = initStateView(state);
+            dispatch(action);
+            dispatch(loading(false));
+        });
+
+    }
+}
 
 export function getUpdatedState(id) {
     
@@ -100,20 +108,13 @@ export function getUpdatedState(id) {
         service.getStateById(id)
         .then (state => {
             let action = initStateUpdate(state);
-            console.log(" state ", state);
-            //action object
             dispatch(action);
             dispatch(loading(false));
         });
 
     }
 }
-// export function updateState(state) {
-//     return {
-//         type: ActionTypes.INIT_STATEUPDATE,
-//         state: state
-//     }
-// }
+
 
 
 
@@ -126,8 +127,6 @@ export function getStateById(id) {
         service.getStateById(id)
         .then (state => {
             let action = initStateView(state);
-            console.log(" state ", state);
-            //action object
             dispatch(action);
             dispatch(loading(false));
         });

@@ -8,8 +8,7 @@ function loggerMiddleware(store){
     return function(next){
         return function(action)
         {
-            console.log("LOGGER",action,typeof action)
-            //FORWARD ACTION TO NEXT MIDDLE WARE
+        
             let result=next(action);
             return result;
         }
@@ -18,13 +17,11 @@ function loggerMiddleware(store){
 
 
 const rootReducers=combineReducers({
-//statename:Reducer function
     stateview:stateviewreducer,
     mystates:statereducer,
     stateupdate:stateeditreducer
 });
 
-// let store =createStore(counterReducer);
 let store =createStore(rootReducers,applyMiddleware(loggerMiddleware,thunk));
 
 

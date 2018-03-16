@@ -6,7 +6,6 @@ const INITIAL_STATE = {
     error: undefined
 }
 export default function stateviewreducer(state = INITIAL_STATE, action) {
-    console.log("stateviewReducer ", state, action);
     switch(action.type) {
         case ActionTypes.INIT_STATEVIEW:
             return Object.assign({}, state, {state: action.payload.state});

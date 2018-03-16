@@ -6,7 +6,6 @@ const INITIAL_STATE = {
     error: undefined
 }
 export default function stateeditreducer(state = INITIAL_STATE, action) {
-    console.log("stateeditReducer ", state, action);
     switch(action.type) {
         case ActionTypes.INIT_STATEUPDATE:
             return Object.assign({}, state, {state: action.payload.state});

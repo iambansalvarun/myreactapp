@@ -18,7 +18,7 @@ export default class Header extends PureComponent{
 
                 <h2>{this.props.title}</h2>
 <ul id ="links">
-                <NavLink to="/"  exact className="button" activeClassName="success" >
+                <NavLink to="/"   className="button" activeClassName="success" >
                      Home
                 </NavLink>
 

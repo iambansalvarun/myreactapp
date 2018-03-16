@@ -5,7 +5,7 @@ import statelist from "../components/States";
 import * as action from "../state/actions";
 
 const mapStateToProps = (state) => {
-    console.log("container called")
+
 
     return {
 
@@ -17,7 +17,7 @@ const mapStateToProps = (state) => {
 }
 
 const mapDispatchToProps = (dispatch) => {
-    console.log("dispatch called")
+  
     return {
         fetchStates: function () {
             let actionFn = action.fetchStates();

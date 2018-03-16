@@ -27,6 +27,12 @@ const mapDispatchToProps = (dispatch) => {
             let actionFn = action.saveUpdatedState(state);
             dispatch(actionFn)
         },
+      
+        createState: function (state) {
+            let actionFn = action.createState(state);
+            dispatch(actionFn)
+        },
+
 
         getStateById: function (id) {
             let actionFn = action.getUpdatedState(id);

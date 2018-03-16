@@ -1,25 +1,164 @@
-import {react,PureComponent} from 'react';
+import React, { PureComponent } from "react";
 import PropTypes from "prop-types";
 
-export default class About extends PureComponent{
+export default class About extends PureComponent {
 
-render(){
+    render() {
 
-return(
-<div id ="aboutus">
-<table>
-    <tbody>
-        </tbody>
-</table>
+        return (
+            <div id="about">
+                <h2>Meet Our Team</h2>
+                <table>
+                    <tbody>
 
-</div>
+                        <tr>
+                            <td>
+                                <h3>
+                                    Varun Bansal
+    <br />
+                                    <small>Backend Developer</small>
+                                </h3>
+                            </td>
+                            <td>
+                                <div className="teammember">
+
+                                    <img  src="/assets/varun.jpg" alt="varun bansal" />
+
+                                </div>
+                            </td>
+
+                             <td>
+                                <h3>
+                                    Varun Bansal
+    <br />
+                                    <small>Backend Developer</small>
+                                </h3>
+                            </td>
+                            <td>
+                                <div className="teammember">
+
+                                    <img  src="/assets/varun.jpg" alt="varun bansal" />
+
+                                </div>
+                            </td>
+                            <td>
+                                <h3>
+                                    Varun Bansal
+    <br />
+                                    <small>Backend Developer</small>
+                                </h3>
+                            </td>
+                            <td>
+                                <div className="teammember">
+
+                                    <img  src="/assets/varun.jpg" alt="varun bansal" />
+
+                                </div>
+                            </td>
+                        </tr>
+
+  <tr>
+                            <td>
+                                <h3>
+                                    Varun Bansal
+    <br />
+                                    <small>Backend Developer</small>
+                                </h3>
+                            </td>
+                            <td>
+                                <div className="teammember">
+
+                                    <img  src="/assets/varun.jpg" alt="varun bansal" />
+
+                                </div>
+                            </td>
+
+                             <td>
+                                <h3>
+                                    Varun Bansal
+    <br />
+                                    <small>Backend Developer</small>
+                                </h3>
+                            </td>
+                            <td>
+                                <div className="teammember">
+
+                                    <img  src="/assets/varun.jpg" alt="varun bansal" />
+
+                                </div>
+                            </td>
+                            <td>
+                                <h3>
+                                    Varun Bansal
+    <br />
+                                    <small>Backend Developer</small>
+                                </h3>
+                            </td>
+                            <td>
+                                <div className="teammember">
+
+                                    <img  src="/assets/varun.jpg" alt="varun bansal" />
+
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h3>
+                                    Varun Bansal
+    <br />
+                                    <small>Backend Developer</small>
+                                </h3>
+                            </td>
+                            <td>
+                                <div className="teammember">
+
+                                    <img  src="/assets/varun.jpg" alt="varun bansal" />
+
+                                </div>
+                            </td>
+
+                             <td>
+                                <h3>
+                                    Varun Bansal
+    <br />
+                                    <small>Backend Developer</small>
+                                </h3>
+                            </td>
+                            <td>
+                                <div className="teammember">
+
+                                    <img  src="/assets/varun.jpg" alt="varun bansal" />
+
+                                </div>
+                            </td>
+                            <td>
+                                <h3>
+                                    Varun Bansal
+    <br />
+                                    <small>Backend Developer</small>
+                                </h3>
+                            </td>
+                            <td>
+                                <div className="teammember">
+
+                                    <img  src="/assets/varun.jpg" alt="varun bansal" />
+
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
 
 
-)
+        )
 
 
 
-}
+    }
 
 
 
