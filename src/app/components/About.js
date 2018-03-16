@@ -11,51 +11,6 @@ export default class About extends PureComponent {
                 <table>
                     <tbody>
 
-                        <tr>
-                            <td>
-                                <h3>
-                                    Varun Bansal
-    <br />
-                                    <small>Backend Developer</small>
-                                </h3>
-                            </td>
-                            <td>
-                                <div className="teammember">
-
-                                    <img  src="/assets/varun.jpg" alt="varun bansal" />
-
-                                </div>
-                            </td>
-
-                             <td>
-                                <h3>
-                                    Varun Bansal
-    <br />
-                                    <small>Backend Developer</small>
-                                </h3>
-                            </td>
-                            <td>
-                                <div className="teammember">
-
-                                    <img  src="/assets/varun.jpg" alt="varun bansal" />
-
-                                </div>
-                            </td>
-                            <td>
-                                <h3>
-                                    Varun Bansal
-    <br />
-                                    <small>Backend Developer</small>
-                                </h3>
-                            </td>
-                            <td>
-                                <div className="teammember">
-
-                                    <img  src="/assets/varun.jpg" alt="varun bansal" />
-
-                                </div>
-                            </td>
-                        </tr>
 
   <tr>
                             <td>

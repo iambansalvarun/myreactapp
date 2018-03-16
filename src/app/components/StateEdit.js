@@ -92,13 +92,13 @@ export default class StateEdit extends PureComponent {
                                     <tr>
                                         <td><b>State Code</b> </td>
                                         <td>
-                                            <input name="code" onChange={(e) => this.handleChange(e)} value={mystate.code} />
+                                            <input name="code" onChange={(e) => this.handleChange(e)} value={mystate.code} required />
                                         </td></tr>
 
                                     <tr>
                                         <td><b>State Name</b></td>
                                         <td>
-                                            <input name="name" onChange={(e) => this.handleChange(e)} value={mystate.name} />
+                                            <input name="name" onChange={(e) => this.handleChange(e)} value={mystate.name} required/>
 
                                         </td></tr>
 
@@ -122,13 +122,13 @@ export default class StateEdit extends PureComponent {
                                     <tr>
                                         <td><b>State Code</b> </td>
                                         <td>
-                                            <input name="code" onChange={(e) => this.handleChange(e)} />
+                                            <input name="code" onChange={(e) => this.handleChange(e)} required />
                                         </td></tr>
 
                                     <tr>
                                         <td><b>State Name</b></td>
                                         <td>
-                                            <input name="name" onChange={(e) => this.handleChange(e)} />
+                                            <input name="name" onChange={(e) => this.handleChange(e)}  required/>
 
                                         </td></tr>
 
